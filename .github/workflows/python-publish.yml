@@ -71,10 +71,10 @@ jobs:
       #   with:
       #     files: dist/architecture_simulator-0.1.0-py3-none-any.whl
       - name: Upload pages artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v4
         with:
           # Upload webgui dist
           path: 'webgui/dist/'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
